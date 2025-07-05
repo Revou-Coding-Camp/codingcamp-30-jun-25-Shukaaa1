@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tugas_style.css">
+    <title>Form Belajar</title>
+</head>
+<body>
+    <header>
+        <h1>Galih's Form</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">My Profile</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Message Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+        <legend>Form Belajar</legend>
+
+        <form id="learningForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" placeholder="Nama" required>
+
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob">
+
+            <label>Jenis Kelamin:</label>
+            <label for="male"><input type="radio" name="gender" value="Laki-Laki" id="male">Laki-laki</label>
+            <label for="female"><input type="radio" name="gender" value="Perempuan" id="female">Perempuan</label>
+            <label for="message">Pesan:</label>
+            <textarea id="message" placeholder="Pesan" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        </fieldset>
+
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Profile</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Created By Galih</p>
+    </footer>
+
+    <script src="tugas_interaction.js"></script>
+</body>
+</html>
